@@ -48,7 +48,7 @@ function Home() {
 					</h1>
 					<div className='w-full grid grid-cols-4 gap-[32px] max-[600px]:gap-[10px] max-[950px]:grid-cols-3 max-[700px]:grid-cols-2 max-[490px]:grid-cols-1'>
 						{carCatigoriy?.map(car => (
-							<Link to={`/details`} state={{ name: car.name }} key={car.id}>
+							<Link to="/details" state={{ name: car.name }} key={car.id}>
 								<div className='group max-w-[289px] max-[700px]:max-w-full cursor-pointer'>
 									<img
 										className='w-full bg-contain'
